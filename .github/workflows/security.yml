@@ -37,7 +37,8 @@ jobs:
           scanners: vuln
           severity: HIGH,CRITICAL
           ignore-unfixed: true
-          exit-code: '0'
+          exit-code: '1'
+          trivyignores: .trivyignore
 
   sast:
     runs-on: ubuntu-latest
